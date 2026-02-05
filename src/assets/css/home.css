@@ -1,0 +1,76 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+.hero { position: relative; min-height: 100vh; overflow: hidden; }
+
+.hero__bg{
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/reza.jpg"); 
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.03);
+  z-index: 0;
+}
+
+.hero__overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(85, 165, 210, 0.55);
+  z-index: 1;
+}
+
+.hero__header{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 28px;
+  gap: 24px;
+}
+
+.hero__brand{
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 44px;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.hero__nav{ display: flex; gap: 26px; align-items: center; }
+.hero__nav a{ color: rgba(255,255,255,0.85); text-decoration: underline; font-size: 18px; }
+.hero__nav a.is-active{ text-decoration-thickness: 3px; }
+
+.hero__content{
+  position: relative;
+  z-index: 2;
+  margin-top: 110px;
+  padding: 0 28px;
+  text-align: center;
+}
+
+.hero__title{ margin: 0; font-weight: 300; font-size: 56px; color: rgba(255,255,255,0.95); }
+.hero__subtitle{ margin-top: 32px; font-size: 26px; color: rgba(255,255,255,0.9); text-align: left; max-width: 920px; }
+
+.contact-dock{
+  position: fixed;
+  left: 26px;
+  bottom: -38px;
+  width: 220px;
+  height: 110px;
+  border-radius: 220px 220px 0 0;
+  background: rgba(0, 150, 210, 0.85);
+  color: white;
+  z-index: 3;
+  display: grid;
+  place-items: start center;
+  padding-top: 22px;
+  text-decoration: none;
+  transition: transform 220ms ease, bottom 220ms ease;
+}
+
+.contact-dock:hover{ transform: scale(1.08); bottom: -28px; }
+.contact-dock span{ font-size: 20px; }

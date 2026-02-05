@@ -1,67 +1,38 @@
-<!DOCTYPE html>
-<html lang="de" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmadreza Ghiyasi</title>
-    <meta name="description" content="Here is my World!"/>
-    <link rel="stylesheet" href="../assets/css/home.css"/> 
-</head>
+    <link rel="stylesheet" href="../assets/css/home.css" />
+  </head>
 
-<body>
-    <a class="skip-link" href="#content">go to contents</a>
-    <header class="site-header">
-        <nav class="nav container">
-          <a class="brand" href="./index.html">Ahmadreza</a>
-          <button class="nav-toggle" aria-label="open/close Menu" aria-expanded="false">
-            ☰
-          </button>
-          <ul class="nav-links" data-nav>
-            <li>a class="active" href="./index.html">Home</a></li>
-            <li><a href="./about.html">about</a></li>
-          <li><a href="./projects.html">projects</a></li>
-          <li><a href="./contact.html">contact</a></li>
-          </ul>
-          </nav>
-          </header>
-          <main id="content">
-            <section class="hero container">
-                <div class="hero-text">
-                    <p class="eyebrow">Software Developer</p>
-                    <h1>Ahmadreza Ghiyasi</h1>
-                    <p class="subtitle">
-                        here, you can see my portfolio, Projects, abilities and Hobbys
-                    </p>
+  <body>
+    <main class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
 
-                    <div class="hero-actions">
-                        <a class="btn primary" href="./projects.html">see projects</a>
-                        <a class="btn" href="../../downloads/Reza_Ghiyasi_CV.pdf" target="_blank" rel="noreferrer">
-                           download CV
-                        </a>
-                    </div>
+      <header class="hero__header">
+        <div class="hero__brand">AHMADREZA GHIYASI</div>
 
-                    <div class="social">
-                        <a href="#" aria-label="GitHub">GitHub</a>
-                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    </div>
+        <nav class="hero__nav">
+          <a href="./cv.html">my cv</a>
+          <a href="./projects.html" class="is-active">Projects</a>
+          <a href="./hobbies.html">Hobbies</a>
+          <a href="./open-up.html">Open up</a>
+        </nav>
+      </header>
 
-                    <div class="hero-card">
-                        <div class="card">
-                          <h2>what am I doing?</h2>
-                          <ul>
-                            <li>knowledge Front-End (HTML/CSS/JS)</li>
-                            <li>my portfolio</li>
-                            <li>My Visit card QR</li>
-                          </ul>
-                        </div>
-                </div>
-            </section>
-          </main>
+      <section class="hero__content">
+        <h1 class="hero__title">Motto: Never Give Up</h1>
+        <p class="hero__subtitle">
+          I would like here to speak free and you can know me better
+        </p>
+      </section>
 
-          <footer class="site-footer">
-            <div class="container footer-inner">
-              <p>© <span id="year"></span> Ahmadreza Ghiyasi</p>
-            </div>
-          </footer>
-</body>
+      <a class="contact-dock" href="./contact.html">
+        <span>Contact me</span>
+      </a>
+    </main>
+  </body>
 </html>
